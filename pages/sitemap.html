@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Materials/bootstrap.min.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
@@ -12,24 +13,82 @@
     <title>Sitemap</title>
 </head>
 <body>
-    <section class="header ">
+    <section class="header">
         <div class="header__logo">
             <a href="../index.html">
             <img src="../assets/images/logo.png" alt="" class="banner__th">  
-        </a>
+            </a>
         </div>
-        <div class="header__menu">
+    
+    <nav id="hamnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+        <div class="header__menu" id="hamitems">
             <a href="../index.html"><div class="header__menu__item">Trang chủ</div></a>
-            <a href="./listing.html"><div class="header__menu__item">Sản phẩm</div></a>
-            <a href="./about.html"><div class="header__menu__item">Chúng tôi</div></a>
-            <a href="./sitemap.html"><div class="header__menu__item">Sitemap</div></a>
-            <a href="./login.html"><div class="header__menu__item">Đăng nhập</div></a>
-            <a href="./cart.html">
+            <a href="../pages/listing.html"><div class="header__menu__item">Sản phẩm</div></a>
+            <a href="../pages/about.html"><div class="header__menu__item">Chúng tôi</div></a>
+            <a href="../pages/sitemap.html"><div class="header__menu__item">Sitemap</div></a>
+            <a href="../pages/login.html"><div class="header__menu__item">Đăng nhập</div></a>
+            <a href="../pages/cart.html">
                 <span class="header__menu__item material-symbols-outlined" style="font-size: 30px;">
-                    shopping_bag
+                    shopping_cart
                 </span>
             </a>
         </div>
     </section>
-</body>
+    <section class="sitemap" style="margin-top: 100px;">
+        <table class="table table-hover" style="margin-left: 110px;width: 80%">
+            <thead>
+              <tr>
+                <th scope="col">Sản phẩm</th>
+                <th scope="col">Tài khoản và bảo mật</th>
+                <th scope="col">Giới thiệu về chúng tôi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="product1.html">Samsung Galaxy Note 22</a></td>
+                <td><a href="login.html">Đăng nhập</a></td>
+                <td><a href="about.html">Giới thiệu</a> </td>
+              </tr>
+              <tr>
+                <td><a href="product2.html">Samsung Galaxy Z Flip 3</a></td>
+                <td><a href="register.html">Đăng ký</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="product3.html">iPhone 13 Pro Red Version</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="product4.html">iPhone 13 Pro Green Version</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+    
+</body><footer >
+        <div class="footer__content">
+            <div class="footer__logo">
+              <img src="../assets/images/logo.png" alt="logo">
+            </div>
+            <div class="footer__contact">
+              <h3>Contact</h3>
+              <h3>0123456789</h3>
+              <h3>neu.edu.vn</h3>
+            </div>
+            <div class="footer__socials">
+              <h3>Follow us</h3>
+              <div class="socials">
+                <a href="#"><img src="../assets/images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../assets/images/tik-tok.png" alt="tiktok"></a>
+              </div>
+            </div>
+        </div>
+        
+    </footer>
 </html>

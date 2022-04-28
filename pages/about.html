@@ -127,7 +127,7 @@
         .banner__th {
             width: 2vw;
             margin-left: 3vw;
-            margin-bottom: 2vw;
+            margin-bottom: 0vw;
             margin-right: 0vw;
             flex: 1;
 
@@ -140,25 +140,29 @@
     <title>Về chúng tôi</title>
 </head>
 <body>
-    <section class="header ">
+    <section class="header">
         <div class="header__logo">
             <a href="../index.html">
             <img src="../assets/images/logo.png" alt="" class="banner__th">  
-        </a>
+            </a>
         </div>
-        <div class="header__menu">
+    
+    <nav id="hamnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+        <div class="header__menu" id="hamitems">
             <a href="../index.html"><div class="header__menu__item">Trang chủ</div></a>
-            <a href="./listing.html"><div class="header__menu__item">Sản phẩm</div></a>
-            <a href="./about.html"><div class="header__menu__item">Chúng tôi</div></a>
-            <a href="./sitemap.html"><div class="header__menu__item">Sitemap</div></a>
-            <a href="./login.html"><div class="header__menu__item">Đăng nhập</div></a>
-            <a href="./cart.html">
+            <a href="../pages/listing.html"><div class="header__menu__item">Sản phẩm</div></a>
+            <a href="../pages/about.html"><div class="header__menu__item">Chúng tôi</div></a>
+            <a href="../pages/sitemap.html"><div class="header__menu__item">Sitemap</div></a>
+            <a href="../pages/login.html"><div class="header__menu__item">Đăng nhập</div></a>
+            <a href="../pages/cart.html">
                 <span class="header__menu__item material-symbols-outlined" style="font-size: 30px;">
-                    shopping_bag
+                    shopping_cart
                 </span>
             </a>
         </div>
-    </section>    
+    </section>
     <section class="banner">
         <div class="banner__wrapper">
             <div class="banner__inner">
@@ -169,20 +173,26 @@
         </div>
         <img src="../assets/images/2ndbg.jpg" alt="" class="banner__image">
     </section>
-    <section class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__inner">
-                <p>Instagram</p>
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>Tiktok</p>
-                <p>YouTube</p>
+    <footer class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+              <img src="../assets/images/logo.png" alt="logo">
             </div>
-            <div style="flex: 1;"></div>
-            <div class="footer__inner">
-                <p>Điều khoản dịch vụ</p>
+            <div class="footer__contact">
+              <h3>Contact</h3>
+              <h3>0123456789</h3>
+              <h3>neu.edu.vn</h3>
+            </div>
+            <div class="footer__socials">
+              <h3>Follow us</h3>
+              <div class="socials">
+                <a href="#"><img src="../assets/images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../assets/images/tik-tok.png" alt="tiktok"></a>
+              </div>
             </div>
         </div>
-    </section>
+        
+    </footer>
 </body>
 </html>

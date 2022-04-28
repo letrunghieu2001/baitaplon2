@@ -1,72 +1,137 @@
-body {
-    overflow: hidden;
-    margin: 0px;
+
+/* form sign up */
+body{
+  background: linear-gradient(90deg,#7ea1ca,#ebad8a);
 }
-.main {
-    font-family: Product;
-    background-image: url(../images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0%;
-    left: 0%;
+.form{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin:0px auto;
+  margin-top:100px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 600px;
+  background-color: #ffffff;
+  padding:30px 30px 20px 30px;
 }
-.inactive {
-    display: none;
+.form img{
+  max-width: 128px;
 }
-.main__wrapper {
-    background-color: white;
-    padding: 40px;
-    box-shadow: 0px 0px 20px white;
-    border-radius: 10px;
+.form h3{
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size: 40px;
+  font-weight: bold;
 }
-.main input {
-    width: 300px;
+.form .form__input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.submit-button {
-    border: none;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    width: fit-content;
-    padding: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #A238FF;
-    color: white;
-    transition-duration: 0.2s;
-    cursor: pointer;
+.form .form__input .form__group{
+  margin-bottom: 19px;
+  width: 100%;
+  position: relative;
+  
 }
-.submit-button:hover {
-    filter: brightness(0.8);
+.form__group h3{
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 20px;
+  max-width: 100%;
+  margin:0 0 5px 15px;
 }
-.alt-p {
-    text-align: center;
-    transition-duration: 0.2s;
-    cursor: pointer;
-    user-select: none;
-    line-height: 10px;
+.form__group .input__box img{
+  position:absolute;
+  width: 20px;
+  top:45px;
+  left:15px;
 }
-.alt-p:hover {
-    color: #A238FF;
+.form .form__input input{
+  width: 100%;
+  height: 60px;
+  background-color: #dfdedc;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding-left:50px;
+  font-size: 16px;
 }
-.divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
+
+.form .form__input input:hover,.form .form__input input:focus{
+  background-color: thistle;
 }
-.h-custom {
-height: calc(100% - 73px);
+
+#checked{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin:0 0 15px 20px;
 }
-@media (max-width: 450px) {
-.h-custom {
-height: 100%;
+#checked h4{
+  font-weight: 800;
 }
+input[type="checkbox"]{
+  background-color: #ffffff;
+  color:#fff;
+  margin-right:5px;
 }
+.form #form__button{
+  background-color: #d0a791;
+  width: 200px;
+  height: 60px;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding: 12px 58px 8px 60px;
+  align-self: center;
+  border:1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form #form__button:hover, .form #form__button:focus{
+  background-color:tomato;
+}
+.form > a{
+  margin-top:20px;
+}
+.form .form__link{
+  color:black;
+  text-decoration: none;
+  align-self: center;
+  cursor: pointer;
+}
+.form .form__link:hover, .form__link:focus{
+  color: blue;
+}
+.form__footer{
+  margin-top:25px;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__footer a{
+  display: block;
+  margin-left:5px;
+  color:orange;
+  text-decoration: underline;
+}
+
+@media (min-width:600px){
+  .form{
+    max-width: 400px;
+    max-height: 1000px;
+  }
+  .form img{
+    max-width: 256px;
+  }
+  .form #form__button{
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+/* form login */
