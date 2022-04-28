@@ -1,0 +1,30 @@
+.footer {
+    padding-top: 30px;
+    font-family: Product;
+    width: 100%;
+    overflow: hidden;
+    background-color: #5c3f5a;
+    color: white;
+}
+.footer__wrapper {
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 1px solid white;
+    display: flex;
+    margin-bottom: 30px;
+}
+.footer__inner {
+    display: flex;
+    padding-bottom: 30px;
+}
+.footer__inner p {
+    font-size: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+.footer__inner p:hover {
+    color: #F6F54D;
+}

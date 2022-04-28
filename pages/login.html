@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Materials/bootstrap.min.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <section class="main">
+        <div id="loginView" class="main__wrapper">
+            <h2 style="text-align: center;">Đăng nhập</h2>
+            <form class="needs-validation" method="GET">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="lEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <div class="error" name="error-email"></div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Mật khẩu</label>
+                  <input type="password" class="form-control" id="lPassword" placeholder="Password" required>
+                  <div class="error" name="error-password"></div>
+                </div>
+                <button type="submit" id="login" class="submit-button">Đăng nhập</button>
+                <p id="toRegister" class="alt-p"><a href="./register.html">Chưa có tài khoản? Đăng kí</a></p>
+                <p id="homeButton1" class="alt-p"><a href="../index.html">Về trang chủ</a></p>
+                <div id="result"></div>
+              </form>
+        </div>
+    </section>
+    <script>
+        function inputIsBlank (string) {
+        if (string.trim().length === 0) {
+          return true
+        }
+        return false
+      }
+      
+      function inputIsText (number) {
+        if (Number.isNaN(number)) {
+          return true
+        }
+        return false
+      }
+      </script>
+      <script>
+            document.querySelector('button').addEventListener('click', function(e) {
+            e.preventDefault()
+            const password = document.getElementById('lPassword').value
+            const email = document.getElementById('lEmail').value
+            const regex = /^([a-zA-Z0-9](\.|_)?)+[a-zA-Z0-9]\@[a-zA-Z0-9]+(\.?[a-zA-Z0-9]{2})(\.[a-z]{2,3})$/
+            let hasError = false
+            
+            document.getElementsByName('error-password')[0].innerText = ""
+            document.getElementsByName('error-email')[0].innerText = ""
+            document.getElementById('result').innerHTML = ""
+      
+            if (inputIsBlank(email)) {
+              document.getElementsByName('error-email')[0].innerText = "Email không được để trống"
+              document.getElementById('lEmail').focus()
+              hasError = true
+            }
+      
+            if (inputIsBlank(password)) {
+              document.getElementsByName('error-password')[0].innerText = "Password không được để trống"
+              document.getElementById('lPassword').focus()
+              hasError = true
+            }
+      
+            if (!regex.test(email)) {
+              document.getElementsByName('error-email')[0].innerText = "Email không đúng định dạng"
+              document.getElementById('lEmail').focus()
+              hasError = true
+            }
+      
+            if (!hasError) {
+              document.getElementById('result').innerHTML = `
+              
+              Hello ${email} <br/>
+              
+              
+              `
+            }
+            
+          })
+      </script>
+    
+</body>
+</html>

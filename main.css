@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Marlin;
+    src: url(./assets/fonts/Intrepid.ttf);
+}
+@font-face {
+    font-family: Product;
+    src: url(./assets/fonts/Intrepid.ttf);
+}
+@font-face {
+    font-family: Product;
+    font-weight: bold;
+    src: url(./assets/fonts/Intrepid.ttf);
+}
+body {
+    margin: 0px;
+}
+.banner {
+    margin-top: 100px;
+    font-family: Product;
+    background-image: url(./assets/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.banner__wrapper {
+    color: black;
+    height: 400px;
+    width: 60%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner__image {
+    width: 25vw;
+    margin-left: 10vw;
+    margin-right: 8vw;
+    flex: 1;
+    transform: rotate(15deg);
+}
+.banner__title {
+    font-size: 5vw;
+    line-height: 0px;
+    
+}
+.banner__subtitle {
+    font-size: 1.5vw;
+    line-height: 0px;
+   
+}
+.stand {
+    overflow-y: hidden;
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background-color: #003300;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: Product;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stand__title {
+    margin-top: 14vh;
+    text-align: center;
+    font-size: 50px;
+    line-height: 0px;
+    margin-bottom: 50px;
+    
+   
+}
+.stand__subtitle {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    width: 600px;
+    margin-top: 50px;
+}
+.stand__image {
+    width: 50vw;
+    
+}
+.banner__th {
+    width: 2vw;
+    margin-left: 3vw;
+    margin-bottom: 0vw;
+    margin-right: 0vw;
+    flex: 1;
+
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.glow-button {
+    width: fit-content;
+    cursor: pointer;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 200px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: rgb(246, 245, 77);
+    box-shadow: 0px 0px 15px rgb(255, 230, 27);
+    transition-duration: 0.5s;
+    color: #000000;
+
+}
+.glow-button1 {
+    width: fit-content;
+    cursor: pointer;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 200px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: rgb(246, 245, 77);
+    box-shadow: 0px 0px 15px rgb(255, 230, 27);
+    transition-duration: 0.5s;
+    color: #000000;
+
+}
+.glow-button:hover {
+    cursor: pointer;
+    color: #000000;
+    background-color: #C0A1FF;
+    box-shadow: 0px 0px 15px #C0A1FF;
+}.glow-button1:hover {
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+.main-nav { position: fixed; top: 0px; left: 6px; z-index: 10; display: none; }
+.toggle-btn { cursor: pointer; height: 60px; width: 60px; display: flex; align-items: center; justify-content: center; padding: 10px; }
+.toggle-btn div {height: 4px;width: 25px;background-color: rgb(100, 93, 93);position: relative;transition: all 0.3s ease-in-out 0s;}
+.toggle-btn div::before {content: "";position: absolute;top: -10px;left: 0px;height: 4px;width: 40px;background-color: rgb(100, 93, 93);transition: all 0.3s ease-in-out 0s;}
+.toggle-btn div::after {content: "";position: absolute;bottom: -10px;right: 0px;height: 4px;width: 40px;background-color: rgb(100, 93, 93);transition: all 0.3s ease-in-out 0s;}
+.toggle-btn.open div { background-color: transparent; }
+.toggle-btn.open div::before { transform: rotate(405deg) translateY(4px); }
+.toggle-btn.open div::after { transform: rotate(-405deg) translate(20px, -4px); }
+.open { margin-left: 0px !important; }
+.menu li:hover a span { color: rgb(242, 89, 136); }
+@media (max-width:1180px) {
+.stand__title{
+    font-size: 20px;
+}
+
+}

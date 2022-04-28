@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <section class="header ">
+        <div class="header__logo">
+            <a href="../index.html">
+            <img src="../assets/images/logo.png" alt="" class="banner__th">  
+        </a>
+        </div>
+        <div class="header__menu">
+            <a href="../index.html"><div class="header__menu__item">Trang chủ</div></a>
+            <a href="./listing.html"><div class="header__menu__item">Sản phẩm</div></a>
+            <a href="./about.html"><div class="header__menu__item">Chúng tôi</div></a>
+            <a href="./sitemap.html"><div class="header__menu__item">Sitemap</div></a>
+            <a href="./login.html"><div class="header__menu__item">Đăng nhập</div></a>
+            <a href="./cart.html">
+                <span class="header__menu__item material-symbols-outlined" style="font-size: 30px;">
+                    shopping_bag
+                </span>
+            </a>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main__wrapper">
+            <div class="main__before">
+                <img src="../assets/images/bag3.png" alt="">
+            </div>
+            <div class="main__after">
+                <p class="main__title">Louis Vuitton Bag Second Edition</p>
+                <p class="main__subtitle">Mã SP: 0002</p>
+                <p class="main__price">1.299,999,999 VND</p>
+                <p class="main__quantity">Số lượng</p>
+                <input id="quantity" type="number" value="1" min="1">
+                <div id="add" class="main__addcart glow-button" style="margin-left: 45px; margin-top: 40px; padding-left: 60px; padding-right: 60px;"><a href="./cart.html">Thêm vào giỏ hàng</a></div>
+                <div class="main__block">
+                    <p class="main__block__title">THÔNG TIN SẢN PHẨM</p>
+                    <p class="main__block__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur officia dolores soluta accusantium excepturi ea! Ducimus, nulla, deleniti aliquid quis amet incidunt eveniet soluta sapiente expedita corrupti excepturi enim sed?</p>
+                </div>
+                <div class="main__block">
+                    <p class="main__block__title">CHÍNH SÁCH ĐỔI TRẢ</p>
+                    <p class="main__block__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur officia dolores soluta accusantium excepturi ea! Ducimus, nulla, deleniti aliquid quis amet incidunt eveniet soluta sapiente expedita corrupti excepturi enim sed?</p>
+                </div>
+                <div class="main__block">
+                    <p class="main__block__title">THÔNG TIN GIAO HÀNG</p>
+                    <p class="main__block__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur officia dolores soluta accusantium excepturi ea! Ducimus, nulla, deleniti aliquid quis amet incidunt eveniet soluta sapiente expedita corrupti excepturi enim sed?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('add').addEventListener("click",()=>{
+            let cartDataString = localStorage.getItem("cart");
+            let data;
+            let order = {
+                name: "Louis Vuitton Bag Second Edition",
+                price: 1299000999,
+                image: "bag3.png",
+                amount: document.getElementById('quantity').value
+            }
+            if (!cartDataString) {
+                data = [order]
+            } else {
+                data = JSON.parse(cartDataString);
+                data.push(order);
+            }
+            localStorage.setItem("cart", JSON.stringify(data));
+        })
+    </script>
+    <section class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__inner">
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Tiktok</p>
+                <p>YouTube</p>
+            </div>
+            <div style="flex: 1;"></div>
+            <div class="footer__inner">
+                <p>Điều khoản dịch vụ</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
