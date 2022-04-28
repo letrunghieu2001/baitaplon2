@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../assets/css/listing.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -36,10 +36,7 @@
             <img src="../assets/images/logo.png" alt="" class="banner__th">  
         </a>
         </div>
-        <nav id="hamnav">
-            <label for="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger"/>
-                <div class="header__menu" id="hamitems">
+        <div class="header__menu">
             <a href="../index.html"><div class="header__menu__item">Trang chủ</div></a>
             <a href="./listing.html"><div class="header__menu__item">Sản phẩm</div></a>
             <a href="./about.html"><div class="header__menu__item">Chúng tôi</div></a>
@@ -79,24 +76,24 @@
     <script>
         const items = [
             {
-                name: "Louis Vuitton Bag One",
-                image: "bag2.png",
-                href: "./product4.html"
+                name: "Samsung Galaxy Note 22",
+                image: "p1.jpg",
+                href: "./product1.html"
             },
             {
-                name: "Louis Vuitton Bag Two",
-                image: "bag3.png",
-                href: "./product3.html"
-            },
-            {
-                name: "Louis Vuitton Bag Three",
-                image: "bag4.png",
+                name: "Samsung Galaxy Z Flip 3",
+                image: "p3.jpg",
                 href: "./product2.html"
             },
             {
-                name: "Louis Vuitton Bag Four",
-                image: "bag5.png",
-                href: "./product1.html"
+                name: "iPhone 13 Pro Red Version",
+                image: "p5.jpg",
+                href: "./product3.html"
+            },
+            {
+                name: "iPhone 13 Pro Green Version",
+                image: "p6.jpg",
+                href: "./product4.html"
             }
         ]
         function renderItems(items) {

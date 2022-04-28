@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     height: fit-content;
     width: 100%;
-    background-image: url(../images/bg.jpg);
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     overflow: hidden;
     padding-bottom: 100px;
@@ -46,7 +46,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 .main__item img{
-    height: 170px;
+    height: 250px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -61,16 +61,17 @@ body {
 .main__item__buy{
     width: 100%;
     height: 40px;
-    background-color: rgb(246, 245, 77);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     text-align: center;
     line-height: 40px;
-    box-shadow: 0px 0px 15px rgb(255, 230, 27);
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
     transition-duration: 0.5s;
     cursor: pointer;
+    border: 1px solid black;
 }
 .main__item__buy:hover {
-    color: #232323;
-    background-color: #C0A1FF;
-    box-shadow: 0px 0px 15px #C0A1FF;
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 0px 0px 15px #000000;
 }

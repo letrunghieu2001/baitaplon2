@@ -3,7 +3,7 @@
     font-family: Product;
     width: 100%;
     overflow: hidden;
-    background-color: #5c3f5a;
+    background-color: #b9b9b9;
     color: white;
 }
 .footer__wrapper {
@@ -26,5 +26,5 @@
     user-select: none;
 }
 .footer__inner p:hover {
-    color: #F6F54D;
+    color: #000000;
 }
