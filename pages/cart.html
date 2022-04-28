@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Materials/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../main.css">
@@ -106,33 +107,28 @@
             </div>
             
         </div>
-        <div class="main__title">Vui lòng hoàn thành form dưới đây để xác nhận đơn hàng</div>
-        <div class="main__wrap">
-            <div class="main__bottom">
-                <div class="form">
-                    <div class="form__group">
-                        <label for="name">Họ và tên<i >*</i></label>
-                        <div><input type="text" id="name" placeholder="Nhập họ và tên"></div>
-                        
-                    </div>
-                    <div class="form__group">
-                        <label for="phone">Điện thoại<i >*</i></label>
-                        <div><input type="tel" id="phone" placeholder="Nhập số điện thoại" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"></div>
-                    </div>
-                    <div class="form__group">
-                        <label for="">Email<i >*</i></label>
-                    <div><input type="email" id="email" placeholder="Email@email.com"></div>
-                    </div>
-                    <div class="form__group">
-                        <label for="address">Địa chỉ<i >*</i></label>
-                    <div><input type="text" id="address" placeholder="Nhập địa chỉ"></div>
-                    </div>
-                    <div class="form__group">
-                        <label for="message">Câu hỏi/Lời nhắn<i >*</i></label>
-                    <div><textarea type="text" id="message" placeholder="Nhập câu hỏi"></textarea></div>
-                    </div>
-                    <div class="btn-submit">
-                        <a class="glow-button1" style="margin-left:-5px" href="javascript:void(0)" onclick="if (confirm('Bạn đã đặt hàng thành công. Đơn hàng sẽ được chuyển đến bạn sớm nhất')) document.getElementById('').submit()">Đặt hàng</a>
+        <h3 style="text-align: center;margin-top:50px">Hãy cho chúng tôi biết thông tin giao hàng</h3>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Họ và tên</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Địa chỉ giao hàng</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Số điện thoại</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Lời nhắn tới shipper</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <a class="glow-button return" style="margin-left:-5px" href="javascript:void(0)" onclick="if (confirm('Bạn đã đặt hàng thành công. Đơn hàng sẽ được chuyển đến bạn sớm nhất')) document.getElementById('').submit()">Đặt hàng</a>
+          </form>
+
                     </div>
                 </div>
             </div>
@@ -140,7 +136,9 @@
         </div>
 
     </section>
-    <<footer class="container">
+
+    
+</body>    <footer >
         <div class="footer__content">
             <div class="footer__logo">
               <img src="../assets/images/logo.png" alt="logo">
@@ -161,6 +159,4 @@
         </div>
         
     </footer>
-    
-</body>
 </html>
